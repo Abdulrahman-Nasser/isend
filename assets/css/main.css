@@ -17,12 +17,14 @@ img {
 a {
     text-decoration: none;
 }
-.link-bg{
+
+.link-bg {
     background-color: #4f80ed;
-    color: white !important ;
+    color: white !important;
 }
-.link-bg a{
-    color: white !important ;
+
+.link-bg a {
+    color: white !important;
 
 }
 
@@ -64,7 +66,8 @@ a {
     background-color: white;
     transition: all .3s;
 }
-.header2{
+
+.header2 {
     transform: translateY(-50px);
     transition: all .3s;
 }
@@ -95,7 +98,8 @@ a {
     color: white;
     font-weight: 500;
 }
-.fa-solid .fa-ribbon{
+
+.fa-solid .fa-ribbon {
     color: black;
 }
 
@@ -165,26 +169,31 @@ a {
 .service-bg {
     border: solid 1px #f1f1f1;
 }
-.service-row{
+
+.service-row {
     padding: 20px;
 }
+
 .service_col {
     top: -105px;
     text-align: center;
     padding: 50px 10px;
     border-radius: 4px;
     cursor: pointer;
-    position: relative;  
+    position: relative;
 }
+
 .service_col p {
     color: #6d7485;
     line-height: 1.7;
     padding: 10px 0;
 }
-.service_text{
+
+.service_text {
     position: relative;
     top: -80px;
 }
+
 .service_text p {
     color: #6d7485;
     font-size: 17px;
@@ -192,16 +201,17 @@ a {
     line-height: 1.7em;
 }
 
-.btn-service{
+.btn-service {
     background-color: #4f6df5;
     transition: all .3s;
 }
-.btn-service:hover{
+
+.btn-service:hover {
     background-color: #191a1c;
 }
 
 /* service_numbers */
-.service_numbers{
+.service_numbers {
     background-image: url(../img/c2-1-1.jpg);
     background-position: center;
     background-size: cover;
@@ -209,10 +219,11 @@ a {
     position: relative;
     z-index: 1;
 }
-.service_numbers .overlay{
+
+.service_numbers .overlay {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -221,14 +232,41 @@ a {
     opacity: 0.93;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.service_numbers_text .card{
+
+.service_numbers_text .card {
     background-color: transparent;
     border: none;
     color: white !important;
 }
 
-.service_numbers_text .service-icon i{
+.service_numbers_text .service-icon i {
     color: white !important;
 }
 
+@media screen and (max-width:600px) {
+    .service_numbers {
+        height: 100vh;
+    }
 
+    .header2 {
+        transform: translateY(-70px);
+        transition: all .3s;
+    }
+    .header .navbar-nav .nav-link {
+        padding: 10px 13px;
+    }
+}
+@media screen and (max-width:768px) {
+    .service_numbers {
+        height: 60vh;
+    }
+
+    .header2 {
+        transform: translateY(-45px);
+        transition: all .3s;
+        box-shadow:  0 0 5px black;
+    }
+    .header .navbar-nav .nav-link {
+        padding: 10px 13px;
+    }
+}
