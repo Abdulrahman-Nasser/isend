@@ -6,6 +6,10 @@ body {
     direction: rtl;
 }
 
+li {
+    list-style: none;
+}
+
 .p-70 {
     padding: 70px 0;
 }
@@ -26,6 +30,14 @@ a {
 .link-bg a {
     color: white !important;
 
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 white;
 }
 
 
@@ -160,7 +172,7 @@ a {
     direction: ltr;
 }
 
-.service .service-icon i {
+.service-icon i {
     font-size: 70px;
     color: #4f80ed;
     margin: 15px 0;
@@ -243,30 +255,272 @@ a {
     color: white !important;
 }
 
+@media screen and (max-width:768px) {
+    .service_numbers {
+        height: 60vh;
+    }
+
+
+    .header2 {
+        transform: translateY(-45px);
+        transition: all .3s;
+        box-shadow: 0 0 5px black;
+    }
+
+    .header .navbar-nav .nav-link {
+        padding: 10px 13px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .service_numbers {
         height: 100vh;
+    }
+
+    .service_numbers_text {
+        padding: 0 !important;
     }
 
     .header2 {
         transform: translateY(-70px);
         transition: all .3s;
     }
+
     .header .navbar-nav .nav-link {
         padding: 10px 13px;
     }
 }
-@media screen and (max-width:768px) {
-    .service_numbers {
-        height: 60vh;
-    }
 
-    .header2 {
-        transform: translateY(-45px);
-        transition: all .3s;
-        box-shadow:  0 0 5px black;
-    }
-    .header .navbar-nav .nav-link {
-        padding: 10px 13px;
-    }
+/*#########################*/
+/* advantage */
+/*#########################*/
+.advantages .advantages_text .advantages_text_1 {
+    color: #6773f1;
+    font-size: 14px;
+    z-index: 0;
+    margin-bottom: 6px;
+    font-weight: 700;
+    padding: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.advantages .advantages_text .advantages_text_2 {
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+}
+
+.advantages .advantages_text .advantages_text_2::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 45%;
+    background-color: #4f6df5;
+    width: 45px;
+    height: 2px;
+    border-radius: 99px;
+
+}
+
+.advantages .advantages_text .advantages_text_3 {
+    margin: 40px 0;
+    color: #6b6b6b;
+}
+
+.advantages_box_bottom {
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #f3f3f3;
+    border: solid 1px #f3f3f3;
+    padding: 2.5em;
+    margin: 15px 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.advantages_box_bottom .advantages_card_text {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.advantages_box_bottom .advantages_card_text2 p {
+    color: #6b6b6b;
+    line-height: 1.7;
+}
+
+.advantages .advantages_box_bottom .advantages_bottom_icon i {
+    font-size: 50px;
+}
+
+/*#####################*/
+/* call */
+/*#####################*/
+.advantages .call {
+    background-image: url(../img/slider-socmed-03.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+}
+
+.advantages .call .overlay {
+    background-color: #0c0c0c8e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.advantages .call_box {
+    color: white;
+}
+
+.advantages .call .call_box .call_text_1 {
+    margin: 15px 0;
+    padding: 20px 0 0 0;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.advantages .call .call_box .call_text_2 {
+    color: #f7f7f7;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.8em;
+}
+
+.advantages .call .call_btn {
+    color: #ffffff;
+    background-color: #4f80ed;
+    border-radius: 50px !important;
+    padding: 8px 45px;
+    transition: all .3s;
+}
+
+.advantages .call .call_btn:hover {
+    background-color: #333333d2;
+}
+
+/*######################*/
+/*price*/
+/*######################*/
+.price{
+    background-attachment: fixed;
+}
+.price_box {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 60px 35px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.09);
+    transition: all 0.4s ease-in-out;
+}
+
+.price_text_top {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(213, 215, 220, 0.37);
+}
+
+.price .price_icon i {
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.price .price_text_span1 {
+    padding-left: 0;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.price .price_text_span2 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 7px;
+    color: #4f6df5;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.price_number h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 56px;
+    color: #000;
+    margin-bottom: 0;
+    direction: ltr;
+    position: relative;
+}
+
+.price_number h4::after {
+    content: "د.ك";
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 5px;
+}
+
+.right_text span {
+    font-size: 13px;
+}
+.right_text i {
+    font-size: 18px;
+    color: #6cc47f;
+    position: relative;
+    left: -15px;
+    font-weight: bold;
+}
+.price_text_btn .btn{
+    padding: 12px 0;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+    background-color: #4f6df5;
+    color: #ffffff;
+    border: solid 1px #4f6df5;
+    transition: all .5s;
+}
+.price_text_btn .btn:hover{
+    background-color: transparent;
+    color: #4f6df5;
+}
+
+/* special card */
+.speical{
+    position: relative;
+    overflow: hidden;
+}
+
+.speical .overlay{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: -5px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color: #45ba8d;
+    width: 120px;
+    height: 30px;
+    color: white;
 }
