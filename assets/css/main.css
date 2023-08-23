@@ -705,3 +705,62 @@ a {
 .slider {
     background-color: #f7f7f7;
 }
+
+/*#####################*/
+/* contact */
+/*#####################*/
+.contact_top{
+    background-color: #4f80ed;
+}
+.contact_card{
+    background-color: transparent;
+    border: none;
+    color: white !important;
+    font-weight: 700;
+}
+.contact_card i{
+    font-size: 64px;
+}
+.contact_bottom{
+    background-color: #292828;
+}
+.contact_img img{
+width: 140px;
+}
+.icons{
+    color: #7d7d7d;
+}
+.icons i {
+    padding: 7px;
+    transition: all .6s;
+}
+.icons:hover .youtube{
+    color: white;
+    background-color: #ff2020;
+}
+.instagram:hover{
+    color: white;
+    background-color: #f750e0;
+}
+.twitter:hover{
+    color: white;
+    background-color: #71baff;
+}
+.facebook:hover{
+    color: white;
+    background-color: #4f80ed;
+}
+.contact .text{
+    color: #777;
+}
+.contact .img{
+    width: 100%;
+}
+@media screen and (max-width:600px) {
+    .col-sm-2{
+        width: 20%;
+    }
+    .contact_bottom{
+        padding: 70px 26px;
+    }
+}
