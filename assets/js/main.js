@@ -6,6 +6,24 @@ $(window).ready(function () {
         $(".loading-spiner").fadeOut(1500);
     });
 });
+// ## //
+
+// back to top
+// btn-top
+var btn_top = document.querySelector("#top");
+console.log(btn_top);
+
+window.onscroll = function () {
+  if (scrollY >= 100) {
+    btn_top.classList.add("btn-visible");
+    btn_top.classList.remove("to-up");
+  } else {
+    btn_top.classList.remove("btn-visible");
+    btn_top.classList.add("to-up");
+  }
+};
+// ## //
+
 
 // smoth header
 header = document.querySelector(".header")
