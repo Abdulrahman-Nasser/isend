@@ -1,11 +1,14 @@
 
 // loading page
-$(window).ready(function () {
-    $(".loader").fadeOut(1200, function () {
-        $("body").css("overflow", "auto");
-        $(".loading-spiner").fadeOut(1500);
+window.addEventListener('load', function () {
+    $(window).ready(function () {
+        $(".loader").fadeOut(1200, function () {
+            $("body").css("overflow", "auto");
+            $(".loading-spiner").fadeOut(1500);
+        });
     });
-});
+})
+
 // ## //
 
 // back to top
@@ -14,13 +17,13 @@ var btn_top = document.querySelector("#top");
 console.log(btn_top);
 
 window.onscroll = function () {
-  if (scrollY >= 100) {
-    btn_top.classList.add("btn-visible");
-    btn_top.classList.remove("to-up");
-  } else {
-    btn_top.classList.remove("btn-visible");
-    btn_top.classList.add("to-up");
-  }
+    if (scrollY >= 100) {
+        btn_top.classList.add("btn-visible");
+        btn_top.classList.remove("to-up");
+    } else {
+        btn_top.classList.remove("btn-visible");
+        btn_top.classList.add("to-up");
+    }
 };
 // ## //
 
@@ -40,8 +43,8 @@ window.addEventListener('scroll', function () {
 new PureCounter({
     // Setting that can't' be overriden on pre-element
     selector: ".purecounter", // HTML query selector for spesific element
-    start: 0, 
-    end: 100, 
+    start: 0,
+    end: 100,
     duration: 2, // The time in seconds for the animation to complete [seconds]
     delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
     once: true, // Counting at once or recount when the element in view [boolean]
