@@ -7,7 +7,7 @@
     'https://sc-static.net/scevent.min.js');
 
 snaptr('init', 'a28c386d-dd68-4f7c-8c8c-c6094bf11e8f', {
-    'user_email': '_INSERT_USER_EMAIL_'
+    'user_email': 'www.i-send.co'
 });
 
 snaptr('track', 'PAGE_VIEW');

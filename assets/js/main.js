@@ -14,14 +14,17 @@ window.addEventListener('load', function () {
 // back to top
 // btn-top
 var btn_top = document.querySelector("#top");
+var whatsup = document.querySelector("#whats_logo")
 console.log(btn_top);
 
 window.onscroll = function () {
     if (scrollY >= 100) {
         btn_top.classList.add("btn-visible");
+        whatsup.classList.add("whats_logo2");
         btn_top.classList.remove("to-up");
     } else {
         btn_top.classList.remove("btn-visible");
+        whatsup.classList.remove("whats_logo2");
         btn_top.classList.add("to-up");
     }
 };

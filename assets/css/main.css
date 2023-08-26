@@ -56,7 +56,7 @@ a {
 .btn-visible{
     position: fixed;
     padding: 10px 15px;
-    border-radius: 13px;
+    border-radius: 100%;
     right: 30px;
     box-shadow: 0 0 5px black;
     bottom: 15px;
@@ -66,6 +66,7 @@ a {
     text-align: center;
     transition: all .5s;
     visibility: visible;
+    border: none;
 }
 .btn-visible:hover{
     background-color: black;
@@ -73,6 +74,52 @@ a {
 .btn-visible:hover i{
     color: whitesmoke !important;
     font-weight: 700;
+}
+.whats_logo{
+    position: fixed;
+    padding: 5px 10px;
+    border-radius: 100%;
+    right: 30px;
+    box-shadow: 0 0 5px black;
+    border: none;
+    bottom: 15px;
+    z-index: 15626;
+    background-color: #6cc47f;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    transition: all .5s;
+    visibility: visible;
+    animation-name: whatsup;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+.whats_logo2{
+    position: fixed;
+    padding: 5px 10px;
+    border-radius: 100%;
+    right: 30px;
+    box-shadow: 0 0 5px black;
+    bottom: 75px;
+    z-index: 15626;
+    background-color: #6cc47f;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    transition: all .5s;
+    visibility: visible;
+}
+
+@keyframes whatsup {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 /***********************************************************************************/
 
